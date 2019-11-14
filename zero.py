@@ -19,17 +19,18 @@ meat_meal = int (7 - 3)  # CO2 in meat 6.61 lbs CO2 and beans to replace the cal
 while True:
     meal = input("Did your meal have any meat? Enter yes or no:")
     if meal == "no":
-        meal = -4 # the CO2 savings no meat
+        meal = -1*meat_meal # the CO2 savings no meat
     else:
-        meal = 4 # the CO2 cost meat in one meal
-    print(meal)
+        meal = meat_meal # the CO2 cost meat in one meal
     break
 
 new_number = int((meal + pound_c)/tree_in)
-print("The new number of tees you need", new_number)
 
 
-print("The pounds of CO2 produced a year:", pound_c)
-print("The number of trees:", trees)
-print("The number of acres:", acre_space)
-print("CO2 output of one meal with meat:", meat_meal)
+print("You need to plant", new_number, "trees to be carbon zero.")
+print("You produces approximately", pound_c, "lbs of Co2 per year")
+
+print("Eating meat in your meal puts", meat_meal, "lbs of Co2 into the air! ")
+
+print("The number of trees the average american needs to plant to get to carbon zero is", trees)
+print("These trees would cover approximately", acre_space, "acres.")

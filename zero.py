@@ -16,11 +16,17 @@ meter_space = int (feet_space / 11)  # There are 10.76 feet in a meter
 trees = int (pound_c / tree_in + 1)
 meat_meal = int (7 - 3)  # CO2 in meat 6.61 lbs CO2 and beans to replace the calories at 2.25 lbs CO2
 
-user_meal = ("Did you have meat in your meal? Enter 1 for yes and 2 for no:", input ())
-    if user_meal = 1
-        pound_c + meat_meal
+while True:
+    meal = input("Did your meal have any meat? Enter yes or no:")
+    if meal == "no":
+        meal = -4
     else:
-        pound_c - meat_meal
+        meal = 4
+    print(meal)
+    break
+
+new_number = int((meal + pound_c)/tree_in)
+print("The new number of tees you need", new_number)
 
 
 print("The pounds of CO2 produced a year:", pound_c)

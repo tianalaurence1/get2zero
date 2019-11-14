@@ -19,9 +19,9 @@ meat_meal = int (7 - 3)  # CO2 in meat 6.61 lbs CO2 and beans to replace the cal
 while True:
     meal = input("Did your meal have any meat? Enter yes or no:")
     if meal == "no":
-        meal = -4
+        meal = -4 # the CO2 savings no meat
     else:
-        meal = 4
+        meal = 4 # the CO2 cost meat in one meal
     print(meal)
     break
 
